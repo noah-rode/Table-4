@@ -7,6 +7,7 @@ fastp -i $OUT.lite.1_1.fastq -I $OUT.lite.1_2.fastq -o $OUT.lite.trim.1_1.fastq 
 done
 ```
 
-
+## BWA MAPPING
+```
 bwa index bbc.fasta
-
+```
