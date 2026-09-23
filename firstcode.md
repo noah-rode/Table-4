@@ -10,4 +10,11 @@ done
 ## BWA MAPPING
 ```
 bwa index bbc.fasta
+
+for i in *lite.trim.1_1.fastq
+do
+OUT=#{i%lite.trim.1_1.fastq}
+bwa mem -t 10 bbc.fasta $OUT.lite.trim.1_1.fastq $OUT.lite.trim.1_2.fastq > $OUT.sam
+done
 ```
+
