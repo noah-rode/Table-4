@@ -18,3 +18,5 @@ bwa mem -t 10 bbc.fasta $OUT.lite.trim.1_1.fastq $OUT.lite.trim.1_2.fastq > $OUT
 done
 ```
 
+## Samtools View
+```
