@@ -20,3 +20,20 @@ done
 
 ## Samtools View
 ```
+
+for i in *.sam
+do
+OUT=${i%.sam}
+samtools view -b $OUT.sam -o $OUT.bam
+done
+```
+
+## Samtools Sort
+```
+
+for i in *.bam
+do
+OUT=${i%.bam}
+samtools sort $OUT.bam -o $OUT.sorted.bam
+done
+```
