@@ -37,3 +37,8 @@ OUT=${i%.bam}
 samtools sort $OUT.bam -o $OUT.sorted.bam
 done
 ```
+
+## bcftools mpileup and  call
+```
+bcftools mpileup -Ou -f bbc.fasta SRR10729165.sorted.bam SRR1072916
+6.sorted.bam SRR10729566.sorted.bam SRR10733526.sorted.bam SRR31835375.sorted.bam SRR31835473.sorted.bam SRR31835482.sorted.bam SRR31835573.sorted.bam | bcftools call -mv -Ov -o body_size.vc
