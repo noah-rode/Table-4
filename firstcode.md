@@ -100,6 +100,15 @@ password - temp
 ## able to view graph now
 ```
 
+## How to Download Datasets
+```
+
+while read p
+>do
+>wget "$p"
+done<file.txt
+```
+
 
 
 
