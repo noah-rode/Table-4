@@ -131,10 +131,12 @@ done
 
 ## BWA Mapping for Simulans
 ```
-
-
-
-
+for i in *.trim.fastq
+do
+OUT=${i%.trim.fastq}
+bwa mem -t 10 /storehouse/visitor/reference/GCF_016746395.2_Prin_Dsim_3.1_genomic.fna $OUT.trim.fastq > $OUT.sam
+done
+```
 
 
 
