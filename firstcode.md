@@ -129,6 +129,11 @@ bwa mem -t 10 /storehouse/visitor/reference/dmel-all-chromosome-r6.69.fasta $OUT
 done
 ```
 
+## BWA Mapping for Simulans
+```
+
+
+
 
 
 
