@@ -119,6 +119,17 @@ fastp -i "$OUT"_1.fastq -I "$OUT"_2.fastq -o $OUT.1.trim.fastq -O $OUT.2.trim.fa
 done
 ```
 
+## BWA mapping for melanogaster
+```
+
+for i in *.1.trim.fastq
+do
+OUT=${i%.1.trim.fastq}
+bwa mem -t 10 /storehouse/visitor/reference/dmel-all-chromosome-r6.69.fasta $OUT.1.trim.fastq $OUT.2.trim.fastq > $OUT.sam
+done
+```
+
+
 
 
 
