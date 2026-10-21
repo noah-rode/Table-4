@@ -109,6 +109,16 @@ while read p
 done<file.txt
 ```
 
+## updated for loop
+```
+
+for i in *_1.fastq
+do
+OUT=${i%_1.fastq}
+fastp -i "$OUT"_1.fastq -I "$OUT"_2.fastq -o $OUT.1.trim.fastq -O $OUT.2.trim.fastq
+done
+```
+
 
 
 
